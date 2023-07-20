@@ -5,7 +5,6 @@
     <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/alvinwan/aframe-low-poly@0.0.2/dist/aframe-low-poly.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
-    <!--<script src="https://cdn.jsdelivr.net/gh/alvinwan/mirrorvr@0.2.2/dist/mirrorvr.min.js"></script>-->
     <script src="./components/game.js"></script>
     <script src="./components/ocean.js"></script>
   </head>
@@ -16,43 +15,12 @@
 
       <!-- Mixins -->
       <a-assets>
-        <a-mixin id="foliage" geometry="
-            primitive: cone;
-            segments-height: 1;
-            segments-radial:4;
-            radius-bottom:0.3;"
-           material="color:white;flat-shading: true;"></a-mixin>
-        <a-mixin id="trunk" geometry="
-            primitive: box;
-            height:0.5;
-            width:0.1;
-            depth:0.1;"
-           material="color:white;"></a-mixin>
-         <a-mixin id="text" text="
-             font:exo2bold;
-             anchor:center;
-             align:center;"></a-mixin>
-         <a-mixin id="title" text="
-             font:exo2bold;
-             height:40;
-             width:40;
-             opacity:0.75;
-             anchor:center;
-             align:center;"></a-mixin>
-         <a-mixin id="copy" text="
-             font:exo2bold;
-             height:5;
-             width:5;
-             opacity:0.75;
-             anchor:center;
-             align:center;"></a-mixin>
-         <a-mixin id="heading" text="
-             font:exo2bold;
-             height:10;
-             width:10;
-             opacity:0.75;
-             anchor:center;
-             align:center;"></a-mixin>
+        <a-mixin id="foliage" geometry="primitive: cone; segments-height: 1; segments-radial:4; radius-bottom:0.3;" material="color:white;flat-shading: true;"></a-mixin>
+        <a-mixin id="trunk" geometry="primitive: box; height:0.5; width:0.1; depth:0.1;" material="color:white;"></a-mixin>
+        <a-mixin id="text" text=" font:exo2bold; anchor:center; align:center;"></a-mixin>
+         <a-mixin id="title" text="font:exo2bold; height:40; width:40; opacity:0.75; anchor:center; align:center;"></a-mixin>
+         <a-mixin id="copy" text="font:exo2bold; height:5; width:5; opacity:0.75; anchor:center; align:center;"></a-mixin>
+         <a-mixin id="heading" text="font:exo2bold; height:10; width:10; opacity:0.75; anchor:center; align:center;"></a-mixin>
       </a-assets>
 
       <!-- Lights -->
